@@ -1,11 +1,22 @@
+<div class="container">
+ 
+
+</div>
+
+
+
+
+
 <div class="buy">
 <form #date="ngForm">
-    <label for="">select the deadline date</label>
+    <label for="">Select the deadline date</label>
     <div class="date">
         <label>Date</label>
-        <input *ngIf="dateValidate()" type="date" #date="ngModel" class="form-control" [class.is-invalid]="date.invalid && date.touched" name="date" [(ngModel)]="date1" required> 
-        <small class="text-danger" [class.d-none]="date.valid || date.untouched">Name is required</small>    
+        <input type="date" min="{{minDate}}">
+        <!-- <input   type="date" #date="ngModel" class="form-control" [class.is-invalid]="date.invalid && date.touched" name="date" [(ngModel)]="date1" required>  -->
+        <small  class="text-danger" [class.d-none]="date.valid || date.untouched">Date is required</small> 
+        <small class="text-danger" *ngIf="dateValidate()">Invalid date</small>   
     </div>
-    
+
      </form>
 </div>
