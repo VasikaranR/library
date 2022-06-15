@@ -6,5 +6,6 @@
         <input *ngIf="dateValidate()" type="date" #date="ngModel" class="form-control" [class.is-invalid]="date.invalid && date.touched" name="date" [(ngModel)]="date1" required> 
         <small class="text-danger" [class.d-none]="date.valid || date.untouched">Name is required</small>    
     </div>
+    
      </form>
 </div>
