@@ -23,7 +23,7 @@
        <p *ngIf="roleName=='user' else elsecase">
         <td>
             <button  (click)="view()" class="btn btn-info">View</button>&nbsp;
-            <button (click)="lend()" class="btn btn-primary">Lend</button>
+            <button [routerLink]="['/buy',user.id]" class="btn btn-primary">Lend</button>
         </td>
       </p>
       <ng-template #elsecase>

@@ -14,7 +14,7 @@ const routes: Routes = [
 {path:'login',component:LoginComponent},
  {path:'dashboard',component:LibraryDashComponent},
  {path:'user',component:UserComponent},
- {path:'buy',component:BuyComponent},
+ {path:'buy/:id',component:BuyComponent},
  {path:'addbook',component:AddBookComponent},
  {path:'update-addbook/:id',component:AddBookComponent},
 

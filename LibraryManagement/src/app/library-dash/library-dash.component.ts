@@ -39,9 +39,9 @@ export class LibraryDashComponent implements OnInit {
   view(){
 
   }
-  lend(){
-    this.router.navigate(['/buy']);
-  }
+  // lend(){
+  //   this.router.navigate(['/buy']);
+  // }
   add(){
     
     this.router.navigate(['/addbook']);
