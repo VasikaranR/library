@@ -10,6 +10,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { FormsModule } from '@angular/forms';
 import { BuyComponent } from './buy/buy.component';
 import { AddBookComponent } from './add-book/add-book.component';
+import { HeaderComponent } from './header/header.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,6 +19,7 @@ import { AddBookComponent } from './add-book/add-book.component';
     UserComponent,
     BuyComponent,
     AddBookComponent,
+    HeaderComponent,
   ],
   imports: [
     BrowserModule,

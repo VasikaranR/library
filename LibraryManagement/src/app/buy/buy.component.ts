@@ -29,6 +29,7 @@ export class BuyComponent implements OnInit {
   constructor(private router:Router,private route: ActivatedRoute,private userService: UserService) { }
 
   id: number = 0;
+  date1:any='';
 
   ngOnInit(): void {
     this.dateValidate();
