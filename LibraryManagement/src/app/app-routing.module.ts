@@ -12,13 +12,14 @@ import { UserComponent } from './user/user.component';
 const routes: Routes = [
 {path:'',redirectTo:'user',pathMatch:'full'},
 //  {path:'login',redirectTo:'user',pathMatch:'full'},
-{path:'login',component:LoginComponent},
+ {path:'login',component:LoginComponent},
  {path:'dashboard',component:LibraryDashComponent},
  {path:'user',component:UserComponent},
  {path:'buy/:id',component:BuyComponent},
  {path:'addbook',component:AddBookComponent},
  {path:'update-addbook/:id',component:AddBookComponent},
- {path:'home',component:HeaderComponent}
+ {path:'home',component:HeaderComponent},
+ {path:'**',component:LoginComponent}
 
 
 ]

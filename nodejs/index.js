@@ -1,7 +1,8 @@
 const express=require('express');
 const bodyParser=require('body-parser');
+//package import
 
-const {mongoose}=require('./db.js');
+const {mongoose}=require('./db.js'); //local import
 var bookscontroller= require('./controllers/bookscontroller.js');
 
 var app = express();

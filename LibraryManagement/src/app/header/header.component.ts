@@ -1,3 +1,4 @@
+import { variable } from '@angular/compiler/src/output/output_ast';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -11,5 +12,12 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit(): void {
   }
+   menuVariable:boolean=false;
+   menu_icon_variable:boolean=false;
+
+   openMenu(){
+    this.menuVariable=!this.menuVariable;
+    this.menu_icon_variable=!this.menu_icon_variable;
+   }
 
 }
